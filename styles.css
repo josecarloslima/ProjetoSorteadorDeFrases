@@ -1,0 +1,45 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #f0f0f0;
+}
+
+.container {
+  text-align: center;
+}
+
+.card-container {
+  position: relative;
+  display: inline-block;
+  width: 300px; /* Ajuste conforme necessário */
+  height: 400px; /* Ajuste conforme necessário */
+  background-color: #fff;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 20px; /* Adicionado para dar algum espaçamento interno */
+}
+
+.categoria {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.titulo {
+  margin-bottom: 10px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+button {
+  font-size: 16px;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+}
