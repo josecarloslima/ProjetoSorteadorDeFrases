@@ -1,0 +1,84 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #d7d7d7;
+}
+
+.container {
+  text-align: center;
+}
+
+.card-container {
+  position: relative;
+  display: inline-block;
+  width: 238px; /* Ajuste conforme necessário */
+  height: 382px; /* Ajuste conforme necessário */
+  background-color: lightcyan;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 20px; /* Adicionado para dar algum espaçamento interno */
+  box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+  10px 10px 15px rgba(176, 246, 152, 0.12);
+  background-image: url('./images/crossfire-fundo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.categoria {
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.titulo {
+  margin-bottom: 10px;
+}
+
+.button-container {
+  margin-top: 20px;
+}
+
+#sortearButton {
+  background-color: white;
+  box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+  10px 10px 15px rgba(176, 246, 152, 0.12);
+}
+
+#sortearButton:hover {
+  box-shadow: 
+  0px 1px 2px 0px rgba(215,215,215,0.7),
+  1px 2px 4px 0px rgba(215,215,215,0.7),
+  2px 4px 8px 0px rgba(215,215,215,0.7),
+  2px 4px 16px 0px rgba(215,215,215,0.7);
+}
+
+#embaralharButton {
+  background-color: white;
+  box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+  10px 10px 15px rgba(70,70,70,0.12);
+}
+
+#embaralharButton:hover {
+  box-shadow: 
+  0px 1px 2px 0px rgba(215,215,215,0.7),
+  1px 2px 4px 0px rgba(215,215,215,0.7),
+  2px 4px 8px 0px rgba(215,215,215,0.7),
+  2px 4px 16px 0px rgba(215,215,215,0.7); 
+}
+
+button {
+  
+  font-family: 'Monaco', monospace;
+  font-size: 1rem;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 10px;
+  border-bottom-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
