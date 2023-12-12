@@ -74,6 +74,96 @@ var frases = [
       titulo: "Isso Fazia Parte do Plano?!",
       texto: "Escolha um meta-tipo que tem mais de um representante na cena em questão. Um golpe de sorte os atinge e no próximo teste /combate que fizerem recebem um bônus de situação de +1d."
     },
+    {
+      categoria: "Edição de Cena",
+      titulo: "Algo está errado e não está certo!",
+      texto: "Escolha um meta-tipo que tem mais de um representante na cena em questão. Um golpe de azar os atinge e no próximo teste /combate que fizerem perdem um dado, -1d."
+    },
+    {
+      categoria: "Edição de Cena",
+      titulo: "Isso vai doer mais em você do que em nós",
+      texto: "Baixe esta carta e escolha entre seu personagem e seus aliados presentes na cena quem tomará um ponto de dano S ou P a sua escolha. Depois, escolha um oponente presente na cena. Ele vai tomar a soma dos pontos que você distribuiu com mais dois pontos extra. O tipo de dano segue o escolhido para seus aliados, todos tomam o mesmo teipo de dano. Narre uma situação explosiva de área que atingiu a todos que tomaram dano na cena."
+    },
+    {
+      categoria: "MacGuffin",
+      titulo: "Nivelando o Jogo",
+      texto: "Se o seu oponente está com um dos Monitores MAIOR do que o seu (você escolhe qual medir, se o S ou P), ele toma um ponto de dano naquele monitor específico."
+    },
+    {
+      categoria: "Interrupção",
+      titulo: "É isso que você chama de golpe de sorte?",
+      texto: "Depois que tomar um dano, seja S ou P, escolha um dos seus aliados presente na cena. Em vez de você tomar o dano, ele toma o dano. Em compensação, no próximo turno em que ele agir, ele ganha um bônus em dados igual ao dano recebido."
+    },
+    {
+      categoria: "Interrupção",
+      titulo: "Jogo Sujo",
+      texto: "Escolha um personagem presente na cena, ele PERDE -1d no teste /combate."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "Trocando Farpas",
+      texto: "Escolha dois participantes da mesa que tenham a mesma quantidade de cartas na mão. Pode ser você. Agora eles devem trocar todas suas cartas um com o outro."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "Mudando o Ritmo",
+      texto: "Escolha um participante da mesa. Pode ser você mesmo. Descarte todas as cartas que tem em mãos e pegue a mesma quantidade em cartas novas."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "Por quê isso Agora?",
+      texto: "Ao receber esta carta descarte-a automaticamente. O participante a sua direita e a sua esquerda também devem descartar uma carta aleatória de suas mãos. Se não tiverem carta, então é o participante seguinte que descarta. Agora você, e os que descartaram pegam uma carta nova."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "F.U.B.A.R.",
+      texto: "Todos os participantes na mesa que tiverem mais do que três cartas nas mãos, são obrigados a descartar cartas até ficarem com três cartas apenas nas mãos. O participante que for o G.M. pode ficar com quatro cartas na mãos. Hey, não me olhe assim, eu só faço as regras!"
+    },
+    {
+      categoria: "Edição de Cena",
+      titulo: "Os Primeiros a Despertar",
+      texto: "Todos os Elfos e Anões presentes na cena, aliados ou oponentes, recebem um bônus de +1d em seus testes /combate em seu próximo turno. Narre uma situação que favoreça este grupo."
+    },
+    {
+      categoria: "Edição de Cena",
+      titulo: "Nação Goblin",
+      texto: "Todos os Trolls e Orcs presentes na cena, aliados ou oponentes, recebem um bônus de +1d em seus testes /combate em seu próximo turno. Narre uma situação que favoreça este grupo."
+    },
+    {
+      categoria: "Edição de Cena",
+      titulo: "Chummers",
+      texto: "Todos os Humanos presentes na cena, aliados ou oponentes, recebem um bônus de +1d em seus testes /combate em seu próximo turno. Narre uma situação que favoreça este grupo."
+    },
+    {
+      categoria: "Edição de Cena",
+      titulo: "Fortuna e o Reverso",
+      texto: "Qualquer personagem na cena que esteja staggered recupera um ponto de dano seja S ou P. Se algum personagem não tomou dano algum, ele recebe um ponto de dano. Ele escolhe se S ou P. Narre esta situação."
+    },
+    {
+      categoria: "Interrupção",
+      titulo: "Não se Reprima",
+      texto: "Um personagem presente na cena recebe um numero de pontos de dano diretamente em seu Monitor igual a 5 menos quantas cartas sobraram em suas mãos. E ganha um numero de pontos de proteção (Armor) extras no mesmo montante."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "Coisas Esquisitas Acontecem",
+      texto: "Todos os participantes da mesa que estiverem controlando personagens humanos na cena descartam uma carta de sua mão. Se não tiverem cartas na mão, seu personagem toma um ponto de dano S ou P a escolha de quem baixou esta carta. Todos os personagens não humanos na cena ganham uma carta."
+    },
+    {
+      categoria: "Interrupção",
+      titulo: "Péssimo Negócio",
+      texto: "Se você rolou seus dados e obteve uma falha ou um Glitch Crítico, você ainda pode gastar um ponto de Karma e aliviar a sua barra. Tornando o Glitch Crítico numa falha e uma falha numa nova chance re-rolando todos os dados do teste /combate."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "Sacrifício é o nome do Jogo",
+      texto: "Baixe esta carta. Ela vai ficar com você até o fim da sessão, e com isso diminuir sua mão máxima em uma carta. Em compensação você pode agora escolher para as próximas cartas que pegar usar o efeito descrito nelas ou baixar para reduzir o dano do tipo S recebido em um ponto."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "Sacrifício é o nome do Jogo",
+      texto: "Baixe esta carta. Ela vai ficar com você até o fim da sessão, e com isso diminuir sua mão máxima em uma carta. Em compensação você pode agora escolher para as próximas cartas que pegar usar o efeito descrito nelas ou baixar para reduzir o dano do tipo P recebido em um ponto."
+    },
   ];
   
   
