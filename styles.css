@@ -77,7 +77,27 @@ body {
 }
 
 .container {
-  flex: 1;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.card-container {
+  position: relative;
+  display: inline-block;
+  width: 238px; /* Ajuste conforme necessário */
+  height: 382px; /* Ajuste conforme necessário */
+  background-color: lightcyan;
+  border: 2px solid #000;
+  border-radius: 10px;
+  font-size: 16px;
+  margin-bottom: 20px;
+  padding: 20px; /* Adicionado para dar algum espaçamento interno */
+  box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+  10px 10px 15px rgba(176, 246, 152, 0.12);
+  background-image: url('./images/crossfire-fundo.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 }
 
 /* Adicionado estilo para o footer */
