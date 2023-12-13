@@ -102,7 +102,7 @@ var frases = [
     {
       categoria: "Plot Twist",
       titulo: "Nós treinamos para isso",
-      texto: "Ao baixar esta carta você pode descartar até mais três outras cartas de sua mão. Cada carta que descartar vale um ponto bônus de Karma."
+      texto: "Baixe esta carta e se puder descartar sem efeito uma outra carta de sua mão, você ganha um ponto bônus de Karma por isso, ou compra uma nova carta. Você escolhe."
     },
     {
       categoria: "Plot Twist",
@@ -112,7 +112,7 @@ var frases = [
     {
       categoria: "Plot Twist",
       titulo: "Preciso de uma mão aqui",
-      texto: "Escolha um aliado que esteja enfrentando um oponente. No próximo round se ele se recusar a atacar seu oponente (ficando apenas na defesa), vocês dois compram uma carta."
+      texto: "Escolha um aliado que esteja enfrentando um oponente. No próximo round ele não age, apenas se defendee, e vocês dois compram uma carta."
     },
     {
       categoria: "Plot Twist",
@@ -138,6 +138,11 @@ var frases = [
       categoria: "Plot Twist",
       titulo: "Você só pode estar brincando",
       texto: "No próximo round todos os oponentes que seu personagem e seus aliados estão enfrentando receberão um dado extra no ataque, +1d, e vão curar um ponto de dano em seu pior Monitor. Você compra uma carta."
+    },
+    {
+      categoria: "Plot Twist",
+      titulo: "Até que enfim uma boa notícia",
+      texto: "No próximo round todos os aliados de seu personagem e ele próprio receberão um dado extra no ataque, +1d, e vão curar um ponto de dano em seu pior Monitor. O GM compra uma carta."
     },
     {
       categoria: "Rebuliço",
@@ -171,13 +176,93 @@ var frases = [
     },
     {
       categoria: "Plot Twist",
-      titulo: "Chummers",
-      texto: "Todos os personagens humanos ativos na cena recebem mais um dado, +1d, em seu próximo teste /combate. Você compra uma carta."
+      titulo: "A hora da meta humanidade",
+      texto: "Todos os personagens meta humanos ativos na cena recebem um ponto de dano em seu pior Monitor a menos que descartem uma carta. Se por ventura algum jogador tiver seu personagem afetado e não queira, ou possa, gastar a carta exigida ele toma o dano e ganha um ponto bônus de Karma. Já o GM deve decidir se todos seus NPCs tomam ou não o dano, se tomarem o dano, ele compra uma carta."
     },
     {
       categoria: "Plot Twist",
       titulo: "A hora da humanidade",
-      texto: "Todos os personagens humanos ativos na cena recebem um ponto de dano a menos em seu pior Monitor a menos que descartem uma carta. Os Jogadores gastam por seus personagens, o GM faz um gasto pelo conjunto de NPCs aliados dos PCs presentes na cena, e outro pelos oponentes dos PCs."
+      texto: "Todos os personagens humanos ativos na cena recebem um ponto de dano em seu pior Monitor a menos que descartem uma carta. Se por ventura algum jogador tiver seu personagem afetado e não queira, ou possa, gastar a carta exigida ele toma o dano e ganha um ponto bônus de Karma. Já o GM deve decidir se todos seus NPCs tomam ou não o dano, se tomarem o dano, ele compra uma carta."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "Não se reprima",
+      texto: "Esta é a chance dos participantes da mesa trocarem, ou não, suas cartas nas mãos. Um a um, começando por quem baixou esta carta e seguindo em sentido horário, os participantes decidem quais cartas de suas mãos querem manter e quais querem trocar. As que quiserem trocar eles descartam sem efeito algum, e compram um numero de cartas igual, renovando assim suas cartas."
+    },
+    {
+      categoria: "Interrupção",
+      titulo: "Péssimo negócio",
+      texto: "Quando um personagem ganhar um ponto bônus de Karma devido a uma carta jogada. Você impede o ganho transformando a situação de - ganhe um ponto extra de Karma - para - compre uma carta -."
+    },
+    {
+      categoria: "Plot Twist",
+      titulo: "Reforços",
+      texto: "Faça aparecer dois reforços para substituir os dois oponentes que estão com os piores Monitores na cena. Ao fazer isso recupere dos pontos de dano em seu pior Monitor e recupere um ponto de dano do pior Monitor de algum aliado de seu personagem."
+    },
+    {
+      categoria: "Plot Twist",
+      titulo: "Escolha...",
+      texto: "Ou você compra uma carta e um oponente ativo na cena (escolhido pelo GM) recupera um ponto de dano em seu pior Monitor; ou você recupera um ponto de dano em seu pior Monitor e o GM compra uma carta."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "Sobreviver é supervalorizado hoje em dia",
+      texto: "Ao baixar esta carta todos os participantes escolhem quais cartas em suas mãos querem substituir. As que eles querem descartão vão para a mão do GM, e eles podem comprar cartas novas. Quem não tem cartas não participa (a menos que for o GM)."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "A hora dos heróis",
+      texto: "Todos os Jogadores na mesa podem trocar de cartas que estão em suas mãos uns com os outros, mas mantendo sempre seu numero de cartas na mão. O GM compra um número de cartas igual ao numero de Jogadores."
+    },
+    {
+      categoria: "Rebuliço",
+      titulo: "Puro caos",
+      texto: "Todos os participantes devem descartar todas as cartas de suas mãos e substituirem por cartas novas."
+    },
+    {
+      categoria: "Plot Twist",
+      titulo: "Instinto Selvagem",
+      texto: "Escolha um personagem ativo na cena. Se neste ou no próximo round ele não causar nenhum ponto de dano em ninguém, ele receberá uma quantidade de pontos de dano igual a quantidade de pontos de dano que você deu em seu ultimo ataque bem sucedido."
+    },
+    {
+      categoria: "MacGuffin",
+      titulo: "Defesa coordenada",
+      texto: "Quando rolar sua defesa no próximo round, você terá um numero de dados bônus igual ao numero de aliados, ativos ou não, na cena. Entretanto há um limite de dados bônus: +5 (ou seja cinco dados bônus)."
+    },
+    {
+      categoria: "Interrupção",
+      titulo: "Pega ladrão!",
+      texto: "Um participante compra uma carta. Você rouba esta carta dele e coloca na sua mão."
+    },
+    {
+      categoria: "Interrupção",
+      titulo: "Remédios vencidos",
+      texto: "Um ppersonagem recupera um ou mais pontos de dano. Você impede a recuperação, em vez disso ele compra uma carta."
+    },
+    {
+      categoria: "Interrupção",
+      titulo: "Problemas de comunicação",
+      texto: "Um participante compra uma carta. Você impede a ação e em vez de comprar ele descarta sem efeito algum."
+    },
+    {
+      categoria: "Interrupção",
+      titulo: "Cérebros tem um gosto horrível",
+      texto: "Um personagem recebe dano tipo P. Você transforma esse dano em tipo S."
+    },
+    {
+      categoria: "Interrupção",
+      titulo: "Hey isso é sangue?",
+      texto: "Um personagem recebe dano tipo S. Você transforma esse dano em tipo P."
+    },
+    {
+      categoria: "MacGuffin",
+      titulo: "Altamente Contagioso",
+      texto: "Pegue o valor e o tipo do ultimo dano que você infligiu. Agora espalhe este dano em todos os oponentes ativos na cena, não podendo dar mais do que três pontos de dano em um único oponente."
+    },
+    {
+      categoria: "MacGuffin",
+      titulo: "Orgulho da profissão",
+      texto: "Ao derrotar um oponente ou vencer um obstáculo você ganha um ponto bônus de Karma, ou compra uma carta. Você escolhe uma das duas."
     },
   ];
   
