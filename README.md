@@ -1,2 +1,2 @@
 # ProjetoSorteadorDeFrases
- Sorteador de frases online. Ideia é criar um sorteador de frases com formato de sorteador de cartas em JavaScript.
+ Sorteador de frases usando para embaralhamento o algoritmo de Fisher-Yates. O sorteador transpõe para o sistema Shadowrun: Anarchy uma versão das cartas do jogo Shadowrun: Crossfire. Criando um novo sistema para os Pontos de Tramas (Plot Points) usando as cartas de Crossfire sob uma ótica de edição de cenas, narrativa compartilhada, e é claro, muito caos típico do Shadowrun.
