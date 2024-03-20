@@ -1,3 +1,22 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Genos:ital,wght@0,100..900;1,100..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Audiowide&family=Bebas+Neue&family=Genos:ital,wght@0,100..900;1,100..900&family=Tomorrow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* variáveis */
+:root {
+  --fonte-padrao: "Genos", sans-serif;
+  --fonte-destaque: "Tomorrow", sans-serif;
+
+  /* paleta de cores monocromática cromo */
+  --cor1: #d7d7d7;
+  --cor2: #AC6D6D;
+  --cor3: #813C3C;
+  --cor4: #571A1A;
+  --cor5: #330707;
+}
+
 body {
     display: flex; 
     flex-direction: column; 
@@ -5,103 +24,79 @@ body {
     justify-content: flex-start;
     height: 100vh;
     margin: 0;
-    background-color: #d7d7d7;
+    background-color: var(--cor1);
     padding-top: 40px;
   }
   
-  .container {
+  #container {
     text-align: center;
+    width: 100%;
+    margin: 0 auto;
   }
   
-  .card-container {
+  #card-container {
     position: relative;
     display: inline-block;
-    width: 238px; /* Ajuste conforme necessário */
-    height: 382px; /* Ajuste conforme necessário */
-    background-color: lightcyan;
-    border: 2px solid #000;
+    width: 238px;
+    height: 382px; 
+    background-color: var(--cor1);
+    border: 2px solid var(--cor5);
     border-radius: 10px;
-    font-size: 16px;
     margin-bottom: 20px;
-    padding: 20px; /* Adicionado para dar algum espaçamento interno */
-    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
-    10px 10px 15px rgba(176, 246, 152, 0.12);
+    padding: 20px;
+
     background-image: url('./images/crossfire-fundo.png');
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
   
-  .categoria {
+  #categoria {
+    font-family: var(--fonte-padrao);
     font-weight: bold;
     margin-bottom: 5px;
     color: white;
   }
   
-  .titulo {
-    margin-bottom: 10px;
+  #titulo {
+    font-family: var(--fonte-destaque);
+    margin-bottom: 10px;    
+  }
+
+  #fraseSorteada {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 0.8em;
   }
   
-  .button-container {
+  #button-container {
     margin-top: 20px;
   }
   
   #embaralharButton {
     background-color: white;
-    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
-    10px 10px 15px rgba(70,70,70,0.12);
   }
-  
-  #embaralharButton:hover {
-    box-shadow: 
-    0px 1px 2px 0px rgba(215,215,215,0.7),
-    1px 2px 4px 0px rgba(215,215,215,0.7),
-    2px 4px 8px 0px rgba(215,215,215,0.7),
-    2px 4px 16px 0px rgba(215,215,215,0.7); 
-  }
-  
-  button {
-    
-    font-family: 'Monaco', monospace;
-    font-size: 1rem;
+ 
+  button {    
+    font-family: var(--fonte-destaque);
+    font-size: 0.9em;
     padding: 10px;
     cursor: pointer;
-    margin-right: 10px;
-    border-bottom-left-radius: 20px;
-    border-top-right-radius: 20px;
+    margin: auto;
+    border-radius: 10px 0px 10px 0px;
   }
-
-  #creditos {
-    display: block;
-    text-align: center;
-}
-
-.container {
-  width: 100%;
-  margin: 0 auto;
-}
-
-.card-container {
-  position: relative;
-  display: inline-block;
-  width: 238px; /* Ajuste conforme necessário */
-  height: 382px; /* Ajuste conforme necessário */
-  background-color: lightcyan;
-  border: 2px solid #000;
-  border-radius: 10px;
-  font-size: 16px;
-  margin-bottom: 20px;
-  padding: 20px; /* Adicionado para dar algum espaçamento interno */
-  box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
-  10px 10px 15px rgba(176, 246, 152, 0.12);
-  background-image: url('./images/crossfire-fundo.png');
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-/* Adicionado estilo para o footer */
+  
+  button:hover {
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.219);
+    transition: 0.4s;
+    color: white;
+    font-weight: bold;
+    background-color: var(--cor5);
+    border-color: var(--cor2);
+  }
+  
+/* footer */
 #creditos {
+  display: block;
   text-align: center;
   padding: 10px;
 }
