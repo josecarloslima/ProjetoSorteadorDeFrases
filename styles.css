@@ -10,11 +10,11 @@
   --fonte-destaque: "Tomorrow", sans-serif;
 
   /* paleta de cores monocromática cromo */
-  --cor1: #d7d7d7;
-  --cor2: #AC6D6D;
-  --cor3: #813C3C;
-  --cor4: #571A1A;
-  --cor5: #330707;
+  --cor1: #cbcace;
+  --cor2: #b5b4b8;
+  --cor3: #aaa9ad;
+  --cor4: #9f9ea2;
+  --cor5: #8a898d;
 }
 
 body {
@@ -25,6 +25,7 @@ body {
     height: 100vh;
     margin: 0;
     background-color: var(--cor1);
+    background-image: linear-gradient(40deg, var(--cor1), var(--cor5));
     padding-top: 40px;
   }
   

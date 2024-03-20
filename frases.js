@@ -1,269 +1,288 @@
+
 var frases = [
-    {
-      categoria: "MacGuffin",
-      titulo: "Vivendo Perigosamente",
-      texto: "Adicione o GLITCH DIE ao teste /combate."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Meu corpo, minhas regras",
-      texto: "Ao se definir a iniciativa. Você decide em que momento seu personagem irá agir."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Run!",
-      texto: "Em uma ação de movimento. Seu personagem tem uma ação de movimento extra, contando como duas ações de movimento em seu turno, tanto para perto quanto para longe."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Presente Surpresa",
-      texto: "Um grupo de 8 menos quantas cartas sobraram em sua mão, feito de guardas /vigias aparecem de surpresa na cena. Além disso quem jogou a carta compra uma carta."
-    },
-    {
-      categoria: "MacGuffin",
-      titulo: "Primeiros Socorros",
-      texto: "Recupere um ponto de dano do tipo S ou P a sua escolha. Se estiver staggered ou KIA /KO recupera-se para ficar com um ponto de dano restante daquele tipo."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Isso nunca me aconteceu antes...",
-      texto: "Escolha um equipamento biônico (ou AMP cibernético). Ele vai apresentar uma falha e reiniciar ficando inativo no próximo round. Ou seja o dono dele não poderá usá-lo em sua próxima ação."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Click! Click! Click!",
-      texto: "Escolha uma arma de fogo (ou AMP). Ele esta sem balas e precisa ser recarregado ficando inativo no próximo round. Ou seja o dono dele não poderá usá-lo em sua próxima ação."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Tela azul",
-      texto: "Escolha um equipamento eletrônico (ou AMP, ou armadilha revelada na cena). Ele vai apresentar uma falha e reiniciar ficando inativo no próximo round. Ou seja ele não funciona no próximo round."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Deixa comigo",
-      texto: "Um outro personagem vai receber um dano. Seu personagem recebe o dano por ele, se interpondo entre o amigo e a fonte de dano."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Quem com ferro fere...",
-      texto: "Seu personagem acaba de receber um dano. Seu personagem ganha um ataque extra e bônus a ser realizado agora. Nada como uma boa retribuição num sábado à noite!"
-    },
-    {
-      categoria: "Rebuliço",
-      titulo: "Na volta a gente compra",
-      texto: "Escolha um participante da mesa, ele é obrigado a descartar uma carta."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Eu estou te vendo!",
-      texto: "O personagem está protegido por algum tipo de cover. Você pode realizar um ataque ignorando o cover neste ataque."
-    },
-    {
-      categoria: "Rebuliço",
-      titulo: "Pague a moça",
-      texto: "Você baixa esta carta e todos os participantes da mesa te dão uma carta de suas mãos de forma aleatória. Se ao receber suas cartas você ultrapassou o limite, descarte quantas cartas precisar até ficar no limite. Quem não tem carta não participa."
-    },
-    {
-      categoria: "MacGuffin",
-      titulo: "O GPS mandou virar",
-      texto: "Escolha dois personagens ativos na cena. Agora troque-os de posição com um assumindo a posição do outro. Um dos personagens pode ser o seu. Os personagens podem ser aliados ou oponentes, mas os dois devem ser do mesmo tipo (dois PCs, dois aliados ou dois oponentes)."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Isso não estava nos planos",
-      texto: "Escolha dois personagens oponentes e ativos na cena. Agora troque-os de posição fazendo-os enfrentar um único personagem aliado. Que pode ou não ser o seu personagem. Por fim compare o pior Monitor de cada um dos lados; se o menor Monitor do aliado, ou de seu personagem, for menor do que os Monitores dos oponentes (um ou os dois), ganhe um ponto extra de Karma no fim da sessão e compre uma carta agora. Caso contrário apenas compre uma carta agora. "
-    },
-    {
-      categoria: "MacGuffin",
-      titulo: "Você no topo da prateleira!",
-      texto: "Descarte quantas cartas quiser e puder de sua mão além desta. Cada carta descartada recupera um ponto de dano de seu pior Monitor."
-    },
-    {
-      categoria: "MacGuffin",
-      titulo: "Está chovendo balas!",
-      texto: "Você dispara uma quantidade obscena de balas em seu oponente, adicione um ponto extra de dano (do mesmo tipo que sua arma de fogo) se causar dano em seu oponente."
-    },
-    {
-      categoria: "MacGuffin",
-      titulo: "Pau para toda obra",
-      texto: "Você arremata seu oponente com tantos golpes de uma vez que é difícil acompanhar com os olhos, adicione um ponto extra de dano (do mesmo tipo da arma de mão, arremesso ou luta desarmada que está usando) se causar dano em seu oponente."
-    },
-    {
-      categoria: "MacGuffin",
-      titulo: "Do Astral, com amor",
-      texto: "Você dispara seu feitiço com a potência máxima de sua existência mágica, adicione um ponto extra de dano (do mesmo tipo que seu feitiço) se causar dano em seu oponente."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "O destino de todos é compartilhado por cada um",
-      texto: "Ao baixar esta carta compare os Monitores de cada personagem aliado que esteja em cena e ativo. Você escolhe o tipo de Monitor, se S ou P. Aquele(s) que tiver(em) em melhor condição recebem um ponto de dano naquele Monitor. Aquele que receber este dano, compra uma carta."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Nós treinamos para isso",
-      texto: "Baixe esta carta e se puder descartar sem efeito uma outra carta de sua mão, você ganha um ponto bônus de Karma por isso, ou compra uma nova carta. Você escolhe."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Granada",
-      texto: "Escolha dois aliados para tomar um ponto de dano cada, você escolhe o tipo. Os oponentes que eles estão enfrentando e mais dois oponentes adjacentes aos seus oponentes recebem dois pontos de dano cada indo direto para o Monitor deles. Ignorando possiveis proteções (Armor e cover). Os aliados atingidos compram uma carta cada."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Preciso de uma mão aqui",
-      texto: "Escolha um aliado que esteja enfrentando um oponente. No próximo round ele não age, apenas se defendee, e vocês dois compram uma carta."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Jogo sujo",
-      texto: "Baixe esta carta e escolha um oponente que esteja ativo na cena. Se ele der dano em algum aliado, ou em seu personagem, ele vai recuperar uma quantidade de pontos de dano no seu pior Monitor igual aos pontos de dano que conferiu. Você rceberá esta quantidade em cartas e um ponto extra de Karma."
-    },
-    {
-      categoria: "MacGuffin",
-      titulo: "Combate focado",
-      texto: "Seu oponente não pode atacar outro alvo que não seja você. Ele está trancado em você ignorando qualquer outra opção de ataque. A única forma dele ignorar você em um ataque é se ele for atingido pelo efeito de outra carta."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Jogada de mestre",
-      texto: "Ao terminar seu turno, antes de passar a vez. Você age de novo. Podendo fazer novamente o que quiser, inclusive baixando uma nova carta. Mas atenção se você tiver duas destas cartas não pode as jogar em seguida, mas pode usar em rounds diferentes. Não fique bravo comigo, eu só faço as regras, ok!"
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Um minuto insuportável",
-      texto: "Ao baixar esta carta você pode baixar duas outras cartas do tipo Plot Twist que tenha e somar os dois efeitos. Além dos efeitos acumulados das duas cartas você receberá as benesses delas e mais um ponto bônus de Karma."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Você só pode estar brincando",
-      texto: "No próximo round todos os oponentes que seu personagem e seus aliados estão enfrentando receberão um dado extra no ataque, +1d, e vão curar um ponto de dano em seu pior Monitor. Você compra uma carta."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Até que enfim uma boa notícia",
-      texto: "No próximo round todos os aliados de seu personagem e ele próprio receberão um dado extra no ataque, +1d, e vão curar um ponto de dano em seu pior Monitor. O GM compra uma carta."
-    },
-    {
-      categoria: "Rebuliço",
-      titulo: "Vasculhando as oportunidades",
-      texto: "Cada participante da mesa pega uma carta aleatória de sua mão e passa para o particpante à direita. Quem não tem carta não participa."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Rei morto, rei posto",
-      texto: "Todos os personagens humanos ativos na cena recebem mais um dado, +1d, em seu próximo teste /combate. Você compra uma carta."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Os primeiros a acordar",
-      texto: "Todos os personagens Elfos e Anões ativos na cena recebem mais um dado, +1d, em seu próximo teste /combate. Você compra uma carta."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Nação Goblin",
-      texto: "Todos os personagens Troll e Orcs ativos na cena recebem mais um dado, +1d, em seu próximo teste /combate. Você compra uma carta."
-    },
-    {
-      categoria: "Rebuliço",
-      titulo: "F.U.B.A.R.",
-      texto: "Cada Jogador que tiver mais do que três cartas na mão, é obrigado a descartar (sem evocar efeito algum) até ficar com apenas três cartas na mão. O GM descarta faz a mesma coisa, mas se tiver mais do que 6 cartas na mão; ele descarta até ficar apenas com seis cartas na mão."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Hoje não Satã",
-      texto: "Ao atingir o nível Staggered, K.I.A, ou K.O. Use esta carta e recupere os pontos de dano suficiente para você recuar para um ponto antes de Staggered."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "A hora da meta humanidade",
-      texto: "Todos os personagens meta humanos ativos na cena recebem um ponto de dano em seu pior Monitor a menos que descartem uma carta. Se por ventura algum jogador tiver seu personagem afetado e não queira, ou possa, gastar a carta exigida ele toma o dano e ganha um ponto bônus de Karma. Já o GM deve decidir se todos seus NPCs tomam ou não o dano, se tomarem o dano, ele compra uma carta."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "A hora da humanidade",
-      texto: "Todos os personagens humanos ativos na cena recebem um ponto de dano em seu pior Monitor a menos que descartem uma carta. Se por ventura algum jogador tiver seu personagem afetado e não queira, ou possa, gastar a carta exigida ele toma o dano e ganha um ponto bônus de Karma. Já o GM deve decidir se todos seus NPCs tomam ou não o dano, se tomarem o dano, ele compra uma carta."
-    },
-    {
-      categoria: "Rebuliço",
-      titulo: "Não se reprima",
-      texto: "Esta é a chance dos participantes da mesa trocarem, ou não, suas cartas nas mãos. Um a um, começando por quem baixou esta carta e seguindo em sentido horário, os participantes decidem quais cartas de suas mãos querem manter e quais querem trocar. As que quiserem trocar eles descartam sem efeito algum, e compram um numero de cartas igual, renovando assim suas cartas."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Péssimo negócio",
-      texto: "Quando um personagem ganhar um ponto bônus de Karma devido a uma carta jogada. Você impede o ganho transformando a situação de - ganhe um ponto extra de Karma - para - compre uma carta -."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Reforços",
-      texto: "Faça aparecer dois reforços para substituir os dois oponentes que estão com os piores Monitores na cena. Ao fazer isso recupere dos pontos de dano em seu pior Monitor e recupere um ponto de dano do pior Monitor de algum aliado de seu personagem."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Escolha...",
-      texto: "Ou você compra uma carta e um oponente ativo na cena (escolhido pelo GM) recupera um ponto de dano em seu pior Monitor; ou você recupera um ponto de dano em seu pior Monitor e o GM compra uma carta."
-    },
-    {
-      categoria: "Rebuliço",
-      titulo: "Sobreviver é supervalorizado hoje em dia",
-      texto: "Ao baixar esta carta todos os participantes escolhem quais cartas em suas mãos querem substituir. As que eles querem descartão vão para a mão do GM, e eles podem comprar cartas novas. Quem não tem cartas não participa (a menos que for o GM)."
-    },
-    {
-      categoria: "Rebuliço",
-      titulo: "A hora dos heróis",
-      texto: "Todos os Jogadores na mesa podem trocar de cartas que estão em suas mãos uns com os outros, mas mantendo sempre seu numero de cartas na mão. O GM compra um número de cartas igual ao numero de Jogadores."
-    },
-    {
-      categoria: "Rebuliço",
-      titulo: "Puro caos",
-      texto: "Todos os participantes devem descartar todas as cartas de suas mãos e substituirem por cartas novas."
-    },
-    {
-      categoria: "Plot Twist",
-      titulo: "Instinto Selvagem",
-      texto: "Escolha um personagem ativo na cena. Se neste ou no próximo round ele não causar nenhum ponto de dano em ninguém, ele receberá uma quantidade de pontos de dano igual a quantidade de pontos de dano que você deu em seu ultimo ataque bem sucedido."
-    },
-    {
-      categoria: "MacGuffin",
-      titulo: "Defesa coordenada",
-      texto: "Quando rolar sua defesa no próximo round, você terá um numero de dados bônus igual ao numero de aliados, ativos ou não, na cena. Entretanto há um limite de dados bônus: +5 (ou seja cinco dados bônus)."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Pega ladrão!",
-      texto: "Um participante compra uma carta. Você rouba esta carta dele e coloca na sua mão."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Remédios vencidos",
-      texto: "Um ppersonagem recupera um ou mais pontos de dano. Você impede a recuperação, em vez disso ele compra uma carta."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Problemas de comunicação",
-      texto: "Um participante compra uma carta. Você impede a ação e em vez de comprar ele descarta sem efeito algum."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Cérebros tem um gosto horrível",
-      texto: "Um personagem recebe dano tipo P. Você transforma esse dano em tipo S."
-    },
-    {
-      categoria: "Interrupção",
-      titulo: "Hey isso é sangue?",
-      texto: "Um personagem recebe dano tipo S. Você transforma esse dano em tipo P."
-    },
-    {
-      categoria: "MacGuffin",
-      titulo: "Altamente Contagioso",
-      texto: "Pegue o valor e o tipo do ultimo dano que você infligiu. Agora espalhe este dano em todos os oponentes ativos na cena, não podendo dar mais do que três pontos de dano em um único oponente."
-    },
-    {
-      categoria: "MacGuffin",
-      titulo: "Orgulho da profissão",
-      texto: "Ao derrotar um oponente ou vencer um obstáculo você ganha um ponto bônus de Karma, ou compra uma carta. Você escolhe uma das duas."
-    },
-  ];
-  
-  
+  {
+    categoria: "MacGuffin",
+    titulo: "Vivendo Perigosamente",
+    texto: "Adicione o GLITCH DIE ao teste /combate."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Meu corpo, minhas regras",
+    texto: "Após a iniciativa ser definida. Você ativa esta carta e decide em que momento seu personagem irá agir, independente da iniciativa."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Corra!",
+    texto: "Em uma ação de movimento. Seu personagem tem uma ação de movimento extra, ou seja ele se move duas vezes, tanto para perto quanto para longe."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Presente Surpresa",
+    texto: "Escolha um dado (menos o glitch die) da rolagem de um personagem e diga um numero que substituirá o numero sorteado naquele momento."
+  },
+{
+    categoria: "Plot Twist",
+    titulo: "Árvore de Natal",
+    texto: "Escolha um dado (menos o glitch die) da rolagem de um personagem e diga um numero que substituirá o numero sorteado naquele momento. Além disso você pode descartar mais cartas de sua mão e para cada carta acrescentar este efeito em mais um dado!"
+  },
+{
+    categoria: "Plot Twist",
+    titulo: "Ho Ho Ho!",
+    texto: "Na rolagem de um personagem, escolha um numero de dados igual ao numero de cartas que tem nas mãos (menos o glitch die). Agora diga os números que substituirão os numero sorteados de cada dado naquele momento."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Primeiros Socorros",
+    texto: "Recupere uma caixa de dano (escolha se do tipo S ou P). Esta carta pode ser usada mesmo se o personagem estiver num estado de Staggered, KIA, ou KO. E nestes casos ele recupera automaticamente sua consciência."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Isso nunca me aconteceu antes...",
+    texto: "Um equipamento elétrico, eletrônico ou cibernético (pode ser um AMP) sendo ativado na cena. O equipamento não funciona naquele round."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Click! Click! Click!",
+    texto: "Uma arma de fogo (pode ser um AMP) sendo usada na cena. Ops, as balas acabaram! A arma não funciona neste round, ela está sendo recarregada."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Malditos Gremlins!",
+    texto: "Um equipamento mecânico (pode ser um AMP) sendo usado na cena. O equipamento falha e para de funcionar naquele round. Essa carta usada em veículos pode causar sérios acidentes!"
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Deixa comigo",
+    texto: "Um personagem dentro da mesma cena e distância vai receber um dano. Você pula na frente e recebe o dano por ele."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Quem com chumbo fere...",
+    texto: "Seu personagem acaba de perder qualquer quantidade de caixas de dano. Você reage com um ataque extra e gratuito neste instante, com forças vindo do âmago do seu ser. Nada como uma boa retribuição num sábado à noite!"
+  },
+  {
+    categoria: "Rebuliço",
+    titulo: "Na volta a gente compra",
+    texto: "Alguém ia comprar uma carta.. não vai mais. Você cancela uma compra de carta."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Sério?! Eu estou te vendo!",
+    texto: "O personagem está protegido por algum tipo de cover. Você pode realizar o ataque ignorando o cover dele."
+  },
+  {
+    categoria: "Rebuliço",
+    titulo: "Paguem a moça!",
+    texto: "Os outros participantes da mesa (Jogadores e GM) perdem uma carta aleatória que vai para a sua mão. Se com isso você ultrapassou seu limite de mão, você pode escolher com quais irá ficar e quais descartará."
+  },
+{
+    categoria: "Rebuliço",
+    titulo: "Alguém aqui não sabe brincar",
+    texto: "Os outros participantes da mesa (Jogadores e GM) perdem uma carta aleatória que vai para a sua mão substituindo aleatoriamente as cartas que você tem. Se o numero final for maior que o seu limite você descarta aleatoriamente até voltar ao limite."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "O GPS mandou virar",
+    texto: "Dois personagens em distâncias diferentes entre eles. Você troca a posição deles."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Isso não estava nos planos",
+    texto: "Dois personagens em distâncias diferentes entre eles. Você troca a posição deles e cada um perde uma caixa de dano (escolha entre S ou P, lembrando que os dois recebem o mesmo tipo). "
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Peça sempre uma segunda opinião",
+    texto: "Inverta um dos Monitores de condição de um personagem."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Está chovendo balas! Alelúia!",
+    texto: "O Santo das Balas Infinitas sorriu para você, e você dispara tantas balas contra seu alvo que este vai diretamente para o estado de Staggered."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Pau para toda obra",
+    texto: "O Santo das Pauladas Indiscriminadas sorriu para você, e você atinge seu alvo com tantos golpes que ele vai diretamente para o estado de Staggered."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Do Astral, com amor",
+    texto: "O Santo do Tsunami de Mana sorriu para você, e você atinge seu alvo com uma sobrecarga de mana tão poderosa que ele vai diretamente para o estado de Staggered. "
+  },
+{
+    categoria: "MacGuffin",
+    titulo: "Na mosca!",
+    texto: "O Santo do Tiro Perfeito sorriu para você, e você dispara com tamanho precisão contra seu alvo que o manda diretamente para o estado de Staggered."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "O destino de um é compartilhado por todos",
+    texto: "Um personagem perde qualquer quantidade de caixas de dano. Todos seus aliados na cena perdem uma caixa também, e do mesmo tipo."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Nós treinamos para isso",
+    texto: "Uma carta de plot twist foi ativada contra você. Você cancela o efeito dela."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Nós treinamos para isso, lembra?",
+    texto: "Uma carta de plot twist foi ativada contra você. Você cancela o efeito dela e aquele que jogou a carta é obrigado a descartar uma carta extra aleatoriamente."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Preciso de uma mão aqui",
+    texto: "Um aliado do personagem que não esteja na cena. Ele aparece na cena para ajudar. Conveniente, não?"
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Jogo sujo",
+    texto: "Um personagem acabou de perder uma quantidade de caixas de dano. Você muda o tipo de dano de S para P ou de P para S."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Ei, você! Aqui, vem!",
+    texto: "Escolha um inimigo, este só pode atacar você e ninguém mais até você ser derrotado. Ele perde um dado ao atacar você e você ganha um dado ao atacar ele até o fim do combate."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Jogada de mestre",
+    texto: "Você acaba de realizar seu turno encerrando-o. E vejam só que jogada de mestre: você pode realizar uma nova ação imediatamente, inclusive com a ativação de uma outra carta. "
+  },
+{
+    categoria: "Interrupção",
+    titulo: "Jogada de... pera eu já vi isso!",
+    texto: "Um personagem acaba de realizar seu turno de ação. Você pula a vez do próximo personagem na ordem da iniciativa, não deixando-o jogar neste round. "
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Uma regra insuportável",
+    texto: "Uma carta do tipo plot twist foi ativada contra você. Você reverte o efeito para quem a baixou. O efeito refletido vai direto ao finalmente com o alvo, se a carta culminaria em dano a você, ela confere dano a quem lançou, e assim por diante."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Mas isso é uma boa coisa não?",
+    texto: "Após a determinação da iniciativa de todos os personagens da cena. Você decide se os personagens aliados, ou inimigos, receberão um glitch die em suas rolagens neste turno."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Até que enfim uma boa notícia",
+    texto: "O personagem acaba de perder qualquer quantidade de caixas de dano. Em vez disso ele cura uma caixa de dano."
+  },
+  {
+    categoria: "Rebuliço",
+    titulo: "Vasculhando as oportunidades",
+    texto: "Os participantes da mesa (Jogadores e GM) vão escolher uma carta de suas mãos, e descartá-la. Só que em vez desta carta ir embora ela vai para a mão do participante à esquerda."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Rei morto, rei posto",
+    texto: "Todos os personagens humanos na cena recebem um glith die."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Os primeiros a acordar",
+    texto: "Todos os personagens Elfos e Anões na cena recebem um glitch die."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Nação Goblin",
+    texto: "Todos os personagens Troll e Orcs na cena recebem um glitch die."
+  },
+  {
+    categoria: "Rebuliço",
+    titulo: "Batata Quente",
+    texto: "Aquele que baixar esta carta escolhe outro participante da mesa que será obrigado a descartar uma carta aleatória. Este escolhe um outro participante para fazer a mesma coisa, desde que não seja nem quem baixou ou quem lhe escolheu. E assim vai até não terem mais opções viáveis na mesa."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "A hora da meta humanidade",
+    texto: "Todos os personagens não humanos na cena recebem um dado bônus em sua próxima ação."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "A hora da humanidade",
+    texto: "Todos os personagens humanos na cena recebem um dado bônus em sua próxima ação."
+  },
+  {
+    categoria: "Rebuliço",
+    titulo: "Não se reprima",
+    texto: "Você pode descartar quantas cartas quiser de sua mão e para cada carta descartada comprar uma aleatória, renovando sua mão."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Necro-economia",
+    texto: "Um personagem morreu. Você ganha um ponto de Karma extra no final da sessão."
+  },
+  {
+    categoria: "Plot Twist",
+    titulo: "Hora da vingança, palhaço!",
+    texto: "Um personagem morreu. Aliados aparecem na cena para vingar o companheiro morto."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Escolha...",
+    texto: "Pare o jogo! Agora escolha: recupere uma caixa de dano do seu personagem; ou compre uma carta; ou tire seu personagem desta cena maldita. Escolha feita, segue o jogo."
+  },
+  {
+    categoria: "Rebuliço",
+    titulo: "Sobreviver é supervalorizado hoje em dia",
+    texto: "Escolha um participante da mesa que irá descartar todas as cartas que ele tiver nas mãos. Se ele for um Jogador o personagem dele receberá +1 ponto de Karma no final da sessão; se for o GM ele trará de volta um inimigo derrotado que ele quiser."
+  },
+  {
+    categoria: "Rebuliço",
+    titulo: "A hora dos heróis",
+    texto: "Se um Jogador ativar esta carta ele e os outros jogadores podem escolher e trocar uma carta um com o outro. Se o GM ativar esta carta ele pega três cartas aleatórias e pode escolher qual ficará e qual ele irá descartar."
+  },
+  {
+    categoria: "Rebuliço",
+    titulo: "Puro caos",
+    texto: "Todos os participantes devem descartar todas as cartas de suas mãos e substituirem por cartas novas."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Queridinho da Mamãe",
+    texto: "Uma carta ativado afetou um personagem que você não queria que fosse alvo. Você baixa esta carta e diz que o alvo está protegido, assim quem baixou a carta que iria atingir o personagem que você salvou precisa achar outro alvo ou descartar a carta."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Defesa coordenada",
+    texto: "A defesa do seu personagem até o próximo ele agir novamente será aumentada em +3 pontos."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Pega ladrão!",
+    texto: "Um participante compra uma carta. Você pára a compra e rouba a carta dele colocando-a na sua mão."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Remédios vencidos",
+    texto: "Um personagem, por qualquer efeito, situação ou carta recupera caixas de dano. Você impede a ação e ainda confere uma caixa de dano a ele."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Problemas de comunicação",
+    texto: "Um participante compra uma carta. Você impede a compra e faz o participante descartar uma carta a escolha dele."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Cérebros tem um gosto horrível",
+    texto: "Um personagem perdeu qualquer quantidade de caixas de dano do tipo P. Você baixa esta carta e além de perder as caixas o personagem alvo perde um dado extra até a sua próxima ação."
+  },
+  {
+    categoria: "Interrupção",
+    titulo: "Hey isso é sangue?",
+    texto: "Um personagem perdeu qualquer quantidade de caixas de dano do tipo S. Você baixa esta carta e além de perder as caixas o personagem alvo perde um dado extra até a sua próxima ação."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Altamente Contagioso",
+    texto: "Escolha um personagem, ele recebe um glitch die, e o efeito do glitch die vai afetar todos seus aliados naquele turno."
+  },
+  {
+    categoria: "MacGuffin",
+    titulo: "Orgulho da profissão",
+    texto: "Escolha um personagem para receber um ponto de Karma extra no final da sessão, ou quem o controla comprar uma carta."
+  },
+];
