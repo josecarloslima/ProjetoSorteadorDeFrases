@@ -78,12 +78,12 @@ var frases = [
   {
     categoria: "MacGuffin",
     titulo: "Primeiros Socorros",
-    texto: "Recupere uma caixa de dano (escolha se do tipo S ou P) de um personagem."
+    texto: "Recupere uma linha de caixas de dano (escolha o tipo) de um personagem. Se o personagem estiver num estado de Staggered ou pior, ele recupera apenas duas caixas de dano."
   },
   {
     categoria: "MacGuffin",
     titulo: "Por um tris!",
-    texto: "Escolha um personagem em estado Staggered, K.I.A, ou K.O. Este recupera quatro caixas de dano."
+    texto: "Recupere uma linha de caixas de dano (escolha o tipo) de um personagem. Se o personagem estiver num estado de Staggered ou pior, ele se recupera além da linha."
   },
   {
     categoria: "MacGuffin",
